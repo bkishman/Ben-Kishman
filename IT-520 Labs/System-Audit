@@ -1,3 +1,74 @@
-#CPU: AMD Ryzen 7
-#RAM: 16GB
-#OS: Windows 11
+# Lab 02: System Audit
+
+**Student Name:** [Your Name]  
+**Date:** [Completion Date]
+
+---
+
+## Section 1: System Inventory
+
+| Component | Specification |
+|-----------|---------------|
+| Operating System | [e.g., Windows 11 Pro, Ubuntu 22.04 LTS, macOS Sonoma 14.x] |
+| Total Installed RAM | [e.g., 16 GB] |
+| CPU Model & Clock Speed | [e.g., Intel Core i7-10750H @ 2.60 GHz] |
+
+---
+
+## Section 2: The Access Control Model
+
+### Model Definition
+My operating system ([OS Name]) uses **[DAC/MAC/RBAC]** (Define the acronym) as its primary Access Control Model.
+
+**Definition:** [Provide a concise definition of the model. Example: "Discretionary Access Control (DAC) is a model where the owner of a resource has full control over who can access that resource and what permissions they have."]
+
+### Relationship to Permissions
+[Explain how this model relates to Read/Write/Execute permissions. Example: "In DAC, the file owner can assign R/W/X permissions to specific users or groups, allowing granular control over who can read, modify, or execute files."]
+
+### Principle of Least Privilege (PoLP) Application
+[Explain how administrators/users apply this model to enforce PoLP on your OS.]
+
+**Concrete Example:**
+[Provide a specific example from your OS. Examples:
+- Windows: "An administrator creates a service account for a backup application and restricts its permissions to only Read access on the C:\Data folder, preventing it from modifying system files."
+- Linux: "Using chmod, a user sets permissions on a sensitive script to 700, ensuring only the owner can read, write, or execute it."
+- macOS: "In System Preferences, an admin restricts a standard user account from installing applications, limiting potential malware installation."]
+
+---
+
+## Section 3: Top Process Analysis & Risk
+
+### Process 1: [Process Name]
+- **Process Name:** [e.g., chrome.exe]
+- **Process ID (PID):** [e.g., 5432]
+- **Resource Consumption:** [e.g., CPU: 25% or RAM: 1.2 GB]
+
+**Security Risk Hypothesis:**
+[Describe a specific security risk if this process were exploited. Example: "If Chrome were compromised through a browser exploit, an attacker could access saved passwords, cookies, and browsing history, leading to credential theft and session hijacking."]
+
+### Process 2: [Process Name]
+- **Process Name:** [e.g., mysqld]
+- **Process ID (PID):** [e.g., 2048]
+- **Resource Consumption:** [e.g., RAM: 2.5 GB]
+
+**Security Risk Hypothesis:**
+[Example: "If the MySQL daemon were exploited via SQL injection or privilege escalation, an attacker could access, modify, or delete sensitive database information, causing data breaches or loss of data integrity."]
+
+### Process 3: [Process Name]
+- **Process Name:** [e.g., Slack.exe]
+- **Process ID (PID):** [e.g., 7890]
+- **Resource Consumption:** [e.g., RAM: 800 MB]
+
+**Security Risk Hypothesis:**
+[Example: "If Slack were compromised, an attacker could intercept internal communications, exfiltrate confidential company information, or use it as a pivot point to access other network resources."]
+
+---
+
+## Section 4: Submission Checklist
+
+- [ ] File named correctly: System-Audit.md
+- [ ] All sections completed with accurate information
+- [ ] Proper Markdown formatting used
+- [ ] Spell-checked and proofread
+- [ ] Committed to GitHub with meaningful message (e.g., "Lab 02: Initial System Audit")
+- [ ] Repository link verified
