@@ -30,7 +30,7 @@ In DAC, the file owner can assign R/W/X permissions to specific users or groups,
 Users are given R/W/X only to files and and resources they absolutely need in order to do their jobs. In addition, admin users are also given limited privilege, such as when installing system-wide programs. In this case, admins must elevate privileges with user account control (UAC) to approve such changes. This prevents unauthorized users from affecting critical portions of the device or network without logging privilege escalation requests.
 
 **Concrete Example:**
-- Windows: System32 is a critical filepath in Windows 11. Because of how important Sys32 is, access is controlled by DAC. Standard users are not owners and are denied R/W/X. Administrators cannot do so without elevating privilege through UAC. The system account is the only account considered the owner of Sys32 and therefore has full control.
+- Windows: System32 is a critical filepath in Windows 11. Because of how important Sys32 is, access is limited to the least amount of users as possible. Standard users are not owners of the data and are denied R/W/X capability to Sys32. Administrators cannot R/W/X in Sys32 without elevating privilege through UAC. The system account is the only account considered the owner of Sys32 and therefore has full control.
 
 ---
 
