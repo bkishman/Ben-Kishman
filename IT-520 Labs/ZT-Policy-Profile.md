@@ -10,7 +10,8 @@
 
 **2. Core Principle Application**
 
-	-The Policy Engine enforces the principle of "use least privilege" by checking with the PA's policies when a user attempts to access any resources. In the example of the water treatment facility, the PA likely has policies and rules that allow only users in an IAM's HR group to access HR data. For example, the PE could be something like Open Policy Agent (OPA), which can reference lightweight directory access protocol (LDAP) or active directory (AD) rules/policies/groups to check whether a user belongs to the HR group, and rules whether they are allowed to access the water treatment facility's HR data. Anyone not falling into that group would be denied access by the PE, as they do not have sufficient privilege, and thus prevents unauthorized access to personally identifiable information (PII).
+The Policy Engine enforces the principle of "use least privilege" by checking with the PA's policies when a user attempts to access any resources. In the example of the water treatment facility, the PA likely has policies and rules that allow only users in an IAM's HR group to access HR data. For example, the PE could be something like Open Policy Agent (OPA), which can reference lightweight directory access protocol (LDAP) or active directory (AD) rules/policies/groups to check whether a user belongs to the HR group, and rules whether they are allowed to access the water treatment facility's HR data. Anyone not falling into that group would be denied access by the PE, as they do not have sufficient privilege, and thus prevents unauthorized access to personally identifiable information (PII).
+
 
 **3. Simplified Policy Table**
 
